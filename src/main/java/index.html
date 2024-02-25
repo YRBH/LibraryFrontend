@@ -15,11 +15,11 @@
         <input type="text" id="name" placeholder="Название книги">
         <button onclick="addBook()">Добавить книгу</button>
     </div>
-<!--    <div class="book-info">-->
-<!--        <input type="text" id="searchId" placeholder="ID книги">-->
-<!--        <button onclick="getBookById()">Найти книгу</button>-->
-<!--        <button onclick="deleteBookById()">Удалить книгу</button>-->
-<!--    </div>-->
+    <div>
+        <input type="text" id="searchInput" placeholder="Search by ID...">
+        <button onclick="searchBook()">Find Book</button>
+        <button onclick="deleteBook()">Delete Book</button>
+    </div>
     <div class="book-form">
         <input type="text" id="newId" placeholder="id">
         <input type="text" id="newAuthor" placeholder="Новый автор">
@@ -28,8 +28,8 @@
         <button onclick="updateBookById()">Изменить информацию</button>
     </div>
     <div class="user-form">
-        <input type="text" id="userName" placeholder="Имя пользователя">
-        <input type="text" id="userId" placeholder="ID книги">
+        <input type="text" id="userId" placeholder="ID пользователя">
+        <input type="text" id="bookId" placeholder="ID книги">
         <button onclick="borrowBook()">Взять книгу</button>
         <button onclick="returnBook()">Вернуть книгу</button>
     </div>
@@ -41,8 +41,26 @@
             <th>Year</th>
         </tr>
     </table>
-</div>
+    <div>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter name">
+    </div>
+    <div>
+        <label for="lastnameInput">Lastname:</label>
+        <input type="text" id="lastnameInput" placeholder="Enter lastname">
+    </div>
+    <button onclick="createUser()">Create User</button>
 
+    <table id="usersTable">
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>User Last Name</th>
+            <th>User Books</th>
+        </tr>
+    </table>
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>

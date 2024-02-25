@@ -1,6 +1,14 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
+    color: #212529;
     margin: 0;
     padding: 0;
 }
@@ -8,102 +16,77 @@ body {
 .container {
     max-width: 800px;
     margin: 20px auto;
+    padding: 20px;
     background-color: #fff;
-    padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    margin-top: 0;
-    color: #333;
     text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-size: 36px;
-    margin-bottom: 30px;
 }
 
-.input-group {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
+.book-form,
+.user-form {
+    margin-bottom: 20px;
 }
 
-.input-group input[type="text"] {
+input[type="text"],
+button {
     padding: 15px;
-    border: 2px solid #ccc;
+    margin-right: 15px;
+    border: none;
     border-radius: 10px;
-    width: calc(100% - 120px);
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.input-group button {
-    padding: 15px 30px;
+input[type="text"] {
+    width: calc(100% - 120px);
+    background-color: #f2f2f2;
+    padding-left: 15px;
+}
+
+button {
     background-color: #007bff;
     color: #fff;
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.input-group button:hover {
+button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.book-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.book-list li {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 table {
-    border-collapse: collapse;
     width: 100%;
-}
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-th {
-    background-color: #f2f2f2;
-}
-.book-list li:last-child {
-    border-bottom: none;
+    border-collapse: collapse;
 }
 
-.book-info {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.book-info input[type="text"] {
+th,
+td {
+    border: 1px solid #ddd;
     padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    text-align: left;
 }
 
-.book-info button {
-    padding: 15px 30px;
-    background-color: #dc3545;
+th {
+    background-color: #007bff;
     color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.book-info button:hover {
-    background-color: #c82333;
+label {
+    margin-right: 10px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
