@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input[type="text"] {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: calc(100% - 120px);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+.book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.book-list li:last-child {
+    border-bottom: none;
+}
+
+.book-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.book-info input[type="text"] {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.book-info button {
+    padding: 15px 30px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.book-info button:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Библиотека</h1>
+    <div class="book-form">
+        <input type="text" id="author" placeholder="Автор">
+        <input type="text" id="year" placeholder="Год издания">
+        <input type="text" id="name" placeholder="Название книги">
+        <button onclick="addBook()">Добавить книгу</button>
+    </div>
+<!--    <div class="book-info">-->
+<!--        <input type="text" id="searchId" placeholder="ID книги">-->
+<!--        <button onclick="getBookById()">Найти книгу</button>-->
+<!--        <button onclick="deleteBookById()">Удалить книгу</button>-->
+<!--    </div>-->
+    <div class="book-form">
+        <input type="text" id="newId" placeholder="id">
+        <input type="text" id="newAuthor" placeholder="Новый автор">
+        <input type="text" id="newYear" placeholder="Новый год издания">
+        <input type="text" id="newName" placeholder="Новое название книги">
+        <button onclick="updateBookById()">Изменить информацию</button>
+    </div>
+    <div class="user-form">
+        <input type="text" id="userName" placeholder="Имя пользователя">
+        <input type="text" id="userId" placeholder="ID книги">
+        <button onclick="borrowBook()">Взять книгу</button>
+        <button onclick="returnBook()">Вернуть книгу</button>
+    </div>
+    <table id="booksTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Year</th>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
